@@ -33,6 +33,24 @@ public class Task02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // TODO: Write your code here
+        System.out.print ("t1 >>> ");
+        double min = scanner.nextDouble();
 
+        System.out.print ("t2 >>> ");
+        double max = scanner.nextDouble();
+
+        System.out.print ("dt >>> ");
+        double step = scanner.nextDouble();
+        System.out.println("-----------------\n" +
+                "C       F\n" +
+                "-----------------");
+
+        double i = min;
+        while (i <= max) {
+            System.out.printf("%2.2f    %2.2f\n", i, ((i * 9/5) + 32));
+            i += step;
+        }
+        System.out.println("-----------------");
     }
 }
+
